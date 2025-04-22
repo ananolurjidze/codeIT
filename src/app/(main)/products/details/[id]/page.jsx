@@ -1,7 +1,7 @@
-function page({params}) {
-  const id = params.id;
-  console.log(params)
+const page = async ({ params }) => {
+  const { id } = await params;
+
   return <div>{id}</div>;
-}
+};
 
 export default page;
