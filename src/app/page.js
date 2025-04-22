@@ -29,7 +29,7 @@ export default function Home() {
         .then((res) => res.json())
         .then((res) => {
           if (res.token) {
-            // router.replace("/products", {path: 'products'});
+            router.replace("/products", {path: 'products'});
           }
         });
     } catch (error) {
