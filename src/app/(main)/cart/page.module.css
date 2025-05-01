@@ -5,3 +5,19 @@
     padding: 140px 40px 0px;
     gap: 20px;
 }
+
+.itemWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: white;
+    align-items: center;
+}
+
+.buttonWrapper {
+    display: flex;
+    gap: 20px;
+}

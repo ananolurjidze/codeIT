@@ -13,7 +13,9 @@ function layout({ children }) {
           className={`
             ${styles.link}
             ${
-              pathname.includes("/products") ? styles.activeLink : styles.inActiveLink
+              pathname.includes("/products")
+                ? styles.activeLink
+                : styles.inActiveLink
             }`}
           href="/products"
         >
@@ -22,7 +24,11 @@ function layout({ children }) {
         <Link
           className={`
             ${styles.link}
-            ${pathname.includes("/profile") ? styles.activeLink : styles.inActiveLink}
+            ${
+              pathname.includes("/profile")
+                ? styles.activeLink
+                : styles.inActiveLink
+            }
             `}
           href="/profile"
         >
@@ -31,7 +37,11 @@ function layout({ children }) {
         <Link
           className={`
             ${styles.link}
-            ${pathname.includes("/cart") ? styles.activeLink : styles.inActiveLink}
+            ${
+              pathname.includes("/cart")
+                ? styles.activeLink
+                : styles.inActiveLink
+            }
             `}
           href="/cart"
         >
