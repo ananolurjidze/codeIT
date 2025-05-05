@@ -1,7 +1,56 @@
 .container {
-    height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    padding: 2rem;
+    background-color: #e6e0e0;
+    min-height: 100vh;
+  }
+  
+  .imageWrapper {
+    margin: 1rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .title {
+    background-color: #969393;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .desc {
+    width: 600px;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+  
+  .price {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #b13636;
+    margin-bottom: 1rem;
+  }
+
+  .ratingWrapper {
+    display: flex;
     align-items: center;
     flex-direction: column;
-}
+  }
+  
+  .rating {
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+  }
+  
+  .ratingCount {
+    font-size: 1rem;
+    color: #6b6868;
+  }
