@@ -24,7 +24,14 @@ function page() {
     localStorage.setItem("products", JSON.stringify([...products]));
   };
 
-  const handleRemoveOne = async (product) => {};
+  const handleRemoveOne = async (product) => {
+    const products = await JSON.parse(localStorage.getItem("products"));
+    const index = products.findIndex((item) => item.product.id === product.id);
+    products[index].count--;
+
+    setCartProducts(products);
+    localStorage.setItem("products", JSON.stringify([...products]));
+  };
 
   return (
     <div className={styles.container}>

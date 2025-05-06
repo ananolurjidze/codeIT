@@ -38,6 +38,34 @@ const Profile = async () => {
           <p>გვარი: </p>
           <p>{profile.lastName}</p>
         </div>
+        <div className={styles.infoWrapper}>
+           <p>ტელეფონის ნომერი: </p>
+           <p>{profile.phone}</p>
+         </div>
+        <div className={styles.infoWrapper}>
+           <p>მეილი : </p>
+           <p>{profile.email}</p>
+         </div>
+         <div className={styles.infoWrapper}>
+           <p>დაბადების თარიღი : </p>
+           <p>{profile.birthDate}</p>
+         </div> 
+         <div className={styles.infoWrapper}>
+  <p>სრული მისამართი:</p>
+  <p>{`${profile.address?.address}, ${profile.address?.city}, ${profile.address?.stateCode}, ${profile.address?.postalCode}, ${profile.address?.country}`}</p>
+  </div>
+         <div className={styles.infoWrapper}>
+           <p>უნივერსიტეტი : </p>
+           <p>{profile.university}</p>
+         </div>
+         <div className={styles.infoWrapper}>
+           <p>კომპანია : </p>
+           <p>{`${profile.company?.name}` }</p>
+         </div>
+         <div className={styles.infoWrapper}>
+           <p>კომპანიის მისამართი : </p>
+           <p>{`${profile.address?.address}` }</p>
+         </div>
       </section>
       <SignOut />
     </div>
