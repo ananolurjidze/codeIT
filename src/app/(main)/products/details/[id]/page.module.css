@@ -54,3 +54,10 @@
     font-size: 1rem;
     color: #6b6868;
   }
+  
+  .cart{
+    border: 0.1px solid black;
+    border-radius: 40px;
+    background-color: bisque;
+    padding: 8px 9px;
+  }

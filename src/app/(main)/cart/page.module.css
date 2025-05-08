@@ -19,5 +19,32 @@
 
 .buttonWrapper {
     display: flex;
+    flex-direction: column;
     gap: 20px;
+    padding-left: 40px;
 }
+
+.add{
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 7px;
+}
+
+
+.add:hover {
+    background-color: #45a049;
+  }
+
+
+.remove {
+    background-color: #f44336;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 7px;
+
+  }
+
+  .remove:hover {
+    background-color: #d32f2f;
+  }

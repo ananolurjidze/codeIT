@@ -24,10 +24,10 @@ function page() {
     localStorage.setItem("products", JSON.stringify([...products]));
   };
 
-  const handleRemoveOne = async (product) => {
-    const products = await JSON.parse(localStorage.getItem("products"));
-    const index = products.findIndex((item) => item.product.id === product.id);
-    products[index].count--;
+  const  handleRemoveOne = async (product) => {
+     const products = await JSON.parse(localStorage.getItem("products"));
+     const index = products.findIndex((item) => item.product.id === product.id);
+     products[index].count--;
 
     setCartProducts(products);
     localStorage.setItem("products", JSON.stringify([...products]));
@@ -49,8 +49,8 @@ function page() {
             <p>{prod.count} ცალი</p>
           </div>
           <div className={styles.buttonWrapper}>
-            <button onClick={() => handleAddOne(prod.product)}>add 1</button>
-            <button onClick={() => handleRemoveOne(prod.product)}>
+            <button className={styles.add} onClick={() => handleAddOne(prod.product)}>add 1</button>
+            <button className={styles.remove} onClick={() => handleRemoveOne(prod.product)}>
               remove 1
             </button>
           </div>
