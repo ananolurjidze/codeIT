@@ -67,7 +67,7 @@ const Profile = async () => {
            <p>{`${profile.address?.address}` }</p>
          </div>
       </section>
-      <SignOut />
+<SignOut />
     </div>
   );
 };

@@ -21,7 +21,16 @@ function AddToCart({ product }) {
     }
   };
 
-  return <button onClick={handleAddCart}>Add to Cart</button>;
+  return <button onClick={handleAddCart} 
+   style={{
+        border:"1px solid black",
+        borderRadius:"10px",
+        background:"grey",
+        width:"81px",
+        height:"30px",
+        marginTop:"20px",
+   }}
+  >Add to Cart</button>;
 }
 
 export default AddToCart;

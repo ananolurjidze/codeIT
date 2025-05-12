@@ -26,7 +26,7 @@ async function page  ({params})  {
         <div className={styles.ratingWrapper}>
             <p className={styles.rating}>{product.rating.rate}/5</p>
             <p className={styles.ratingCount}>{product.rating.count} reviews</p>
-            <AddToCart className={styles.cart} product={product} />
+          <AddToCart  product={product} />
         </div>
       </section>
     )

@@ -49,8 +49,17 @@ function layout({ children }) {
         </Link>
       </nav>
       {children}
+      
+    <footer className={styles.footer}>
+  <h5>Conditions of Use </h5>
+  <h5>Privacy Notice</h5>
+  <h5>interest-Based Ads</h5>
+</footer>  
     </div>
   );
 }
+ 
+
+
 
 export default layout;
